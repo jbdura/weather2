@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./src/font/Rimouski.css">
+    <link rel="stylesheet" href="./src/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Site</title>
+</head>
+<body onload="display_ct()">
+    <span id="ct"></span>
+    <!-- <div style="background-image: url(src/img/);"> -->
+        <div class="container">
+            <div class="app-title">
+                <p>Weather</p>
+            </div>
+            <div class="notification"></div>
+            <div class="weather-container">
+                <div class="weather-icon">
+                    <img src="src/icons/unknown.png" alt="">
+                </div>
+                <div class="temperature-value">
+                    <p>- °<span>C</span></p>
+                </div>
+            </div>
+            <div class="temperature-desc">
+                <p>-</p>
+            </div>
+            <div class="location">
+                <p>-</p>
+        </div>
+    <!-- </div>     -->
+    <script src="./src/index.js"></script>
+</body>
+</html>
