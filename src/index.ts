@@ -5,7 +5,7 @@ const locationElement = document.querySelector(".location p") as HTMLElement;
 const notificationElement = document.querySelector(".notification") as HTMLElement;
 
 // Weather Data
-const weather:{} = {};
+const weather = {};
 
 weather.temperature = {
     unit: "celsius"
@@ -29,11 +29,12 @@ if ('geolocation' in navigator) {
 
 // location
 function setPosition(position) {
-    let latitude = position.coords.latitude;
-    let longitude = position.coords.longitude;
+    let latitude :number = position.coords.latitude;
+    let longitude :number = position.coords.longitude;
 
     getWeather(latitude, longitude);
 }
+
 // location error
 function showError(error) {
     notificationElement.style.display = 'block';
